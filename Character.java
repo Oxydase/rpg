@@ -51,9 +51,9 @@ public class Character {
     public void equipWeapon(int index) {
         if (index >= 0 && index < inventory.size()) {
             this.equippedWeapon = inventory.get(index);
-            System.out.println("Equipped: " + equippedWeapon);
+            System.out.println("Arme équipé: " + equippedWeapon);
         } else {
-            System.out.println("Invalid weapon choice.");
+            System.out.println("Choix inconnu.");
         }
     }
 
@@ -69,7 +69,7 @@ public class Character {
         if (amount <= money) {
             this.money -= amount;
         } else {
-            System.out.println("Not enough money!");
+            System.out.println("Pas assez d'argent !");
         }
     }
 
